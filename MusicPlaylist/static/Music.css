@@ -1,0 +1,175 @@
+@keyframes BackgroundAnimation {
+    0%  {background-size : 100% 100%;}
+    50%  {background-size : 150% 150%;}
+    100%  {background-size : 100% 100%;}
+
+
+}
+
+
+@keyframes RotateDisc {
+    0%  {transform: rotate(0deg);}
+    50%  {transform: rotate(360deg);}
+    100%  {transform: rotate(0deg);}
+}
+
+
+body {
+    background-image: linear-gradient(grey,red,black);
+    animation: BackgroundAnimation 5s linear infinite;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: safe;
+    flex-wrap: wrap;
+
+    position: absolute;
+    right: 0;
+    bottom: 5%;
+
+
+    border: 5px solid  brown;
+    border-radius: 30px;
+
+    margin: 100px;
+
+
+    height: 500px;
+    width: 700px;
+
+    background-image: linear-gradient(brown,red);
+
+
+}
+
+.box {
+    border: 5px solid brown;
+    border-radius: 20px;
+
+
+
+
+    height: 50px;
+    width: 300px;
+
+
+    background-image: linear-gradient(brown,black);
+    font-family: 'Times New Roman', Times, serif;
+    -webkit-text-stroke: 1px  rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+
+
+}
+
+.woodenborders {
+    border: 20px solid transparent;
+
+    height: 50px;
+    width : 1720px;
+    background-color: transparent;
+
+
+    background-image: url("Images/SoundproofTexture.jpg");
+    background-position: center;
+
+    background-color:  rgba(254, 4, 4, 0.7);
+    background-blend-mode: multiply;
+
+}
+
+.woodenborders.top {
+    position: absolute;
+    top: -5px;
+    left: -50px;
+    z-index: -1;
+}
+
+.woodenborders.bottom {
+    position: absolute;
+    bottom: -55px;
+    left: -50px;
+}
+
+.box.active {
+        background-image: linear-gradient(rgb(50, 165, 42),black);
+}
+
+.MainHeader {
+    text-align: center;
+    text-shadow:  5px 5px 5px rgb(160, 18, 18);
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    -webkit-text-stroke: 1px rgb(252, 0, 0); 
+}
+
+.CurrentText {
+    position: absolute;
+    left: 0;
+    text-shadow:  0 10px 10px rgb(255,255,255);
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    -webkit-text-stroke: 2px rgb(67, 59, 59); 
+}
+
+.PlayButton {
+    position: fixed;
+    right: 60%;
+    bottom: 20%;
+    border: 5px,solid;
+    border-radius: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    height: 75px;
+    width: 125px;
+    background-image: linear-gradient(brown,red);
+}
+
+.ShuffleButton {
+    position: fixed;
+    right: 52%;
+    bottom: 20%;
+    border: 5px,solid;
+    border-radius: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    height: 75px;
+    width: 125px;
+    background-image: linear-gradient(brown,red);
+}
+
+.SubmitButton {
+    position: absolute;
+    bottom: 50%;
+}
+
+
+textarea {
+    width: 250px;
+    height: 100px;
+}
+
+
+textarea.SongInput {
+    position : absolute;
+    bottom: 50%;
+}
+
+.MusicDisc {
+    height: 300px;
+    width : 300px;
+
+    position: absolute;
+    left: 30%;
+    bottom: 30%;
+}
+
+.MusicDisc.Anim {
+    animation: RotateDisc 5s linear infinite;
+}
+
+

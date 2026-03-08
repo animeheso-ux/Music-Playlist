@@ -1,0 +1,65 @@
+<html>
+
+<title>
+    PlayList
+</title>
+
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Music.css') }}">
+</head>
+
+
+<body>
+
+
+    <header>
+        <h1 class = "MainHeader" >🎵Your Playlist🎵</h1>
+    </header>
+
+
+    <textarea class = "SongInput" id = "SongSelector" placeholder="Input Position of song that you want:"></textarea>
+
+    <button class="SubmitButton" id="SubmitButton">Submit</button>
+
+
+    <img src="{{ url_for('static', filename='Images/Disc.png') }}" id="Disc" class="MusicDisc">
+
+    <h1 class="CurrentText" id = "CurrentText">Current Playing :</h1>
+
+    <button class="PlayButton" , id="PlayButton">Play!</button>
+
+    <button class="ShuffleButton" , id="Shuffle">Shuffle</button>
+
+
+
+    <div class = "woodenborders top">
+    </div>
+    <div class = "woodenborders bottom">
+    </div>
+
+
+<div class="container">
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="{{ url_for('static', filename='Music.js') }}"></script>
+
+
+
+</body>
+
+
+
+</html>
