@@ -16,7 +16,7 @@ def home():
 @app.route("/get_songs")
 def get_songs():
     my_dict = {}
-    folder = "MusicPlaylist/static/Playlist"  # relative to app.py
+    folder = "static/Playlist"  # relative to app.py
     files = os.listdir(folder)
 
     for i in range(len(files)):
@@ -32,4 +32,5 @@ def open_browser():
 
 if __name__ == "__main__":
     threading.Timer(1, open_browser).start()
+
     app.run(debug=True)
